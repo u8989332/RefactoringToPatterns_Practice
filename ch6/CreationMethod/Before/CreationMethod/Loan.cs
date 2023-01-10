@@ -9,11 +9,18 @@ namespace CreationMethod
         private readonly DateTime? _maturity;
         private readonly DateTime? _expiry;
 
+        // For unit testing
+        internal CapitalStrategy CapitalStrategy => _capitalStrategy;
+
         public Loan(double commitment, int riskRating, DateTime? maturity) : this(commitment, 0.00, riskRating, maturity, null)
         {
         }
 
         public Loan(double commitment, int riskRating, DateTime? maturity, DateTime? expiry) : this(commitment, 0.00, riskRating, maturity, expiry)
+        {
+        }
+
+        public Loan(double commitment, double outstanding, int riskRating, DateTime? expiry) : this(commitment, outstanding, riskRating, null, expiry)
         {
         }
 
