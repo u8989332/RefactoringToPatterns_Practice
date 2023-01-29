@@ -53,13 +53,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Before", "Before", "{777068
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IPCwFM", "ch6\Introduce Polymorphic Creation with Factory Method\Before\IPCwFM\IPCwFM.csproj", "{BABF8A65-D6E9-4598-A3A6-79298A66F6D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPCwFM.Tests", "ch6\Introduce Polymorphic Creation with Factory Method\Before\IPCwFM.Tests\IPCwFM.Tests.csproj", "{6FD39687-3ACD-4B5B-98DE-99747D631F40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IPCwFM.Tests", "ch6\Introduce Polymorphic Creation with Factory Method\Before\IPCwFM.Tests\IPCwFM.Tests.csproj", "{6FD39687-3ACD-4B5B-98DE-99747D631F40}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "After", "After", "{5742ABE3-A0BF-499A-AE26-1F43447CD366}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IPCwFM", "ch6\Introduce Polymorphic Creation with Factory Method\After\IPCwFM\IPCwFM.csproj", "{A2ECD6B6-52C7-4F0C-8326-7583A5170A42}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IPCwFM.Tests", "ch6\Introduce Polymorphic Creation with Factory Method\After\IPCwFM.Tests\IPCwFM.Tests.csproj", "{B9F93BFE-3345-45B4-8352-001A05C6E4C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Encapsulate Composite with Builder", "Encapsulate Composite with Builder", "{4C958184-671B-4841-9485-8EA19D2895C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "After", "After", "{CBEE9FB3-34A1-4905-A37E-DAF59039714F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECwB", "ch6\Encapsulate Composite with Builder\After\ECwB\ECwB.csproj", "{1AFED66F-1CE0-412E-9AF6-098B24F68A0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECwB.Tests", "ch6\Encapsulate Composite with Builder\After\ECwB.Tests\ECwB.Tests.csproj", "{4DAE44F7-B94C-4027-A656-79B35E1212F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -131,6 +139,14 @@ Global
 		{B9F93BFE-3345-45B4-8352-001A05C6E4C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9F93BFE-3345-45B4-8352-001A05C6E4C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9F93BFE-3345-45B4-8352-001A05C6E4C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AFED66F-1CE0-412E-9AF6-098B24F68A0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AFED66F-1CE0-412E-9AF6-098B24F68A0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AFED66F-1CE0-412E-9AF6-098B24F68A0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AFED66F-1CE0-412E-9AF6-098B24F68A0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DAE44F7-B94C-4027-A656-79B35E1212F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DAE44F7-B94C-4027-A656-79B35E1212F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DAE44F7-B94C-4027-A656-79B35E1212F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DAE44F7-B94C-4027-A656-79B35E1212F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -164,6 +180,10 @@ Global
 		{5742ABE3-A0BF-499A-AE26-1F43447CD366} = {79D250B2-71EE-4131-BA67-AEE547DD0D53}
 		{A2ECD6B6-52C7-4F0C-8326-7583A5170A42} = {5742ABE3-A0BF-499A-AE26-1F43447CD366}
 		{B9F93BFE-3345-45B4-8352-001A05C6E4C9} = {5742ABE3-A0BF-499A-AE26-1F43447CD366}
+		{4C958184-671B-4841-9485-8EA19D2895C4} = {CC53737A-ED55-472C-9617-FE4A4BD40203}
+		{CBEE9FB3-34A1-4905-A37E-DAF59039714F} = {4C958184-671B-4841-9485-8EA19D2895C4}
+		{1AFED66F-1CE0-412E-9AF6-098B24F68A0D} = {CBEE9FB3-34A1-4905-A37E-DAF59039714F}
+		{4DAE44F7-B94C-4027-A656-79B35E1212F8} = {CBEE9FB3-34A1-4905-A37E-DAF59039714F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0978A54F-35F8-441D-8DD2-A855173FD6AF}
