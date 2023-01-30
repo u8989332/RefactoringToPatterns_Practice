@@ -1,12 +1,14 @@
-﻿using System.Xml.Linq;
+﻿using System;
+using System.Text;
+using System.Xml.Linq;
 
 namespace ECwB
 {
     public class TagNode
     {
-        public string Attributes { get; private set; }
+        public StringBuilder Attributes { get; } = new StringBuilder();
         public string TagName { get; }
-        public string Value { get; }
+        public string Value { get; private set; }
         public List<TagNode> Children { get; } = new List<TagNode>();
         public TagNode Parent { get; set; }
 
@@ -23,52 +25,40 @@ namespace ECwB
 
         public override string ToString()
         {
+            StringBuilder result = new StringBuilder();
+            AppendContentTo(result);
+            return result.ToString();
+        }
+
+        public void AddAttribute(string name, string value)
+        {
+            Attributes.Append(" ");
+            Attributes.Append(name);
+            Attributes.Append("='");
+            Attributes.Append(value);
+            Attributes.Append("'");
+        }
+
+        public void AddValue(string value)
+        {
+            Value = value;
+        }
+
+        public void AppendContentTo(StringBuilder xmlResult)
+        {
             if (Children.Count == 0 && string.IsNullOrEmpty(Value))
             {
-                return "<" + TagName + "/>";
+                xmlResult.Append("<" + TagName + "/>");
+                return;
             }
 
-            var result = "<" + TagName + Attributes + ">";
+            xmlResult.Append("<" + TagName + Attributes + ">");
             foreach (var child in Children)
             {
-                result += child.ToString();
+                xmlResult.Append(child.ToString());
             }
-            result += Value;
-            result += "</" + TagName + ">";
-            return result;
-        }
-    }
-
-    public class TagBuilder
-    {
-        private TagNode _rootNode;
-        private TagNode _currentNode;
-
-        public TagBuilder(string rootTagName)
-        {
-            _rootNode = new TagNode(rootTagName);
-            _currentNode = _rootNode;
-        }
-
-        public void AddChild(string childTagName)
-        {
-            AddTo(_currentNode, childTagName);
-        }
-
-
-        public void AddSibling(string siblingTagName)
-        {
-            AddTo(_currentNode.Parent, siblingTagName);
-        }
-
-        public string ToXml()
-        {
-            return _rootNode.ToString();
-        }
-        private void AddTo(TagNode parentNode, string tagName)
-        {
-            _currentNode = new TagNode(tagName);
-            parentNode.Add(_currentNode);
+            xmlResult.Append(Value);
+            xmlResult.Append("</" + TagName + ">");
         }
     }
 }
