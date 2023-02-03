@@ -75,7 +75,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Before", "Before", "{AF162E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InlineSingleton", "ch6\Inline Singleton\Before\InlineSingleton\InlineSingleton.csproj", "{C554C1A9-7B40-4E7B-9FDC-79B53CDABDCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InlineSingleton.Tests", "ch6\Inline Singleton\Before\InlineSingleton.Tests\InlineSingleton.Tests.csproj", "{2F96825F-F947-4B7B-A150-D5E6D4DBF8EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InlineSingleton.Tests", "ch6\Inline Singleton\Before\InlineSingleton.Tests\InlineSingleton.Tests.csproj", "{2F96825F-F947-4B7B-A150-D5E6D4DBF8EB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "After", "After", "{4ADDA140-4E80-4A53-9251-30F427D4A36B}"
 EndProject
@@ -91,13 +91,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Before", "Before", "{D7DDAE
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComposedMethod", "ch7\Composed Method\Before\ComposedMethod\ComposedMethod.csproj", "{234D2B1E-30FB-4AC1-BBA6-411114FFF7FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComposedMethod.Tests", "ch7\Composed Method\Before\ComposedMethod.Tests\ComposedMethod.Tests.csproj", "{57612D43-DAE0-4D2D-9FEB-63EA69C927A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComposedMethod.Tests", "ch7\Composed Method\Before\ComposedMethod.Tests\ComposedMethod.Tests.csproj", "{57612D43-DAE0-4D2D-9FEB-63EA69C927A3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "After", "After", "{068CE66F-6AE3-4905-B198-E6FD3872D13B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComposedMethod", "ch7\Composed Method\After\ComposedMethod\ComposedMethod.csproj", "{37A34E58-F775-40BB-BC49-62ED26554006}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComposedMethod.Tests", "ch7\Composed Method\After\ComposedMethod.Tests\ComposedMethod.Tests.csproj", "{08F9A6C2-145F-4099-9A0B-7790F0442C98}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Replace Conditional Logic with Strategy", "Replace Conditional Logic with Strategy", "{54682471-EEF9-412F-B071-9D626C82AC0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Before", "Before", "{41F052CE-D645-43E0-B24C-1B40270ADFCD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RCLwS", "ch7\Replace Conditional Logic with Strategy\Before\RCLwS\RCLwS.csproj", "{5B084504-3C46-4D8C-BB72-23AB38D63AD8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RCLwS.Tests", "ch7\Replace Conditional Logic with Strategy\Before\RCLwS.Tests\RCLwS.Tests.csproj", "{5EA6512A-BE22-4B93-A049-814AFB3FD1EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "After", "After", "{AF4EBC78-D5D1-4405-9772-2E036011929B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RCLwS", "ch7\Replace Conditional Logic with Strategy\After\RCLwS\RCLwS.csproj", "{220F1E37-82F0-4B13-BC38-F92F76308C3E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RCLwS.Tests", "ch7\Replace Conditional Logic with Strategy\After\RCLwS.Tests\RCLwS.Tests.csproj", "{98B98C4B-6881-4502-80F0-04E687E4E06D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -209,6 +223,22 @@ Global
 		{08F9A6C2-145F-4099-9A0B-7790F0442C98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08F9A6C2-145F-4099-9A0B-7790F0442C98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08F9A6C2-145F-4099-9A0B-7790F0442C98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B084504-3C46-4D8C-BB72-23AB38D63AD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B084504-3C46-4D8C-BB72-23AB38D63AD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B084504-3C46-4D8C-BB72-23AB38D63AD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B084504-3C46-4D8C-BB72-23AB38D63AD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EA6512A-BE22-4B93-A049-814AFB3FD1EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EA6512A-BE22-4B93-A049-814AFB3FD1EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EA6512A-BE22-4B93-A049-814AFB3FD1EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EA6512A-BE22-4B93-A049-814AFB3FD1EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{220F1E37-82F0-4B13-BC38-F92F76308C3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{220F1E37-82F0-4B13-BC38-F92F76308C3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{220F1E37-82F0-4B13-BC38-F92F76308C3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{220F1E37-82F0-4B13-BC38-F92F76308C3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98B98C4B-6881-4502-80F0-04E687E4E06D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98B98C4B-6881-4502-80F0-04E687E4E06D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98B98C4B-6881-4502-80F0-04E687E4E06D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98B98C4B-6881-4502-80F0-04E687E4E06D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -260,6 +290,13 @@ Global
 		{068CE66F-6AE3-4905-B198-E6FD3872D13B} = {1ADE3C83-AD84-4671-85CD-ACCD4777C141}
 		{37A34E58-F775-40BB-BC49-62ED26554006} = {068CE66F-6AE3-4905-B198-E6FD3872D13B}
 		{08F9A6C2-145F-4099-9A0B-7790F0442C98} = {068CE66F-6AE3-4905-B198-E6FD3872D13B}
+		{54682471-EEF9-412F-B071-9D626C82AC0B} = {A499EE12-A735-403D-A1D4-916BD963E142}
+		{41F052CE-D645-43E0-B24C-1B40270ADFCD} = {54682471-EEF9-412F-B071-9D626C82AC0B}
+		{5B084504-3C46-4D8C-BB72-23AB38D63AD8} = {41F052CE-D645-43E0-B24C-1B40270ADFCD}
+		{5EA6512A-BE22-4B93-A049-814AFB3FD1EB} = {41F052CE-D645-43E0-B24C-1B40270ADFCD}
+		{AF4EBC78-D5D1-4405-9772-2E036011929B} = {54682471-EEF9-412F-B071-9D626C82AC0B}
+		{220F1E37-82F0-4B13-BC38-F92F76308C3E} = {AF4EBC78-D5D1-4405-9772-2E036011929B}
+		{98B98C4B-6881-4502-80F0-04E687E4E06D} = {AF4EBC78-D5D1-4405-9772-2E036011929B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0978A54F-35F8-441D-8DD2-A855173FD6AF}
