@@ -7,7 +7,7 @@ public class CapitalStrategyTermLoan : CapitalStrategy
         return loan.Commitment * DurationFor(loan) * GetRiskFactorFor(loan);
     }
 
-    public double DurationFor(Loan loan)
+    protected override double DurationFor(Loan loan)
     {
         return WeightedAverageDuration(loan);
     }
